@@ -4,17 +4,25 @@ Designed to stop the magic smoke from escaping when testing drones.
 
 ---- Development ----
 
-Current version: 	V6.0 - Tested and working
+Primary editor: McHauge
 
-Beta Version: 		V7.0 - Working on better polarity portection
+Current version: 	V7.0 - With better polarity portection than V6.0, 
+this meaning it will portect if the power into the input is worng it will portect, 
+but if the polarity error is after this unit then this will not portect before it trips.
+
+Beta Version: 		
+
+version V6.0 - Tested and working, first stable version that would allow moter ideling.
 
 version V5.0 - First version to work but would not allow the drone to start up.
 
 version V1.0-V4.0 - dosen't work as intendet, does nothing, burns, or wont turn of again.
 
-Primary editor: McHauge
+
 
 ---- History ----
+
+2017-OCT-11 - V7 has been testet with succes, this version has better polarity portection.
 
 2017-OCT-9 - All files a now up on GitHub.
 
