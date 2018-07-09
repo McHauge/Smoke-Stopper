@@ -1,0 +1,3 @@
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\phil_diode.lib, offset=52947, size=407
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\ebipolar.lib, offset=21520, size=367
+ lib=c:\cadence\spb_17.2\tools\PSpice\Library\irf.lib, offset=154543, size=1740

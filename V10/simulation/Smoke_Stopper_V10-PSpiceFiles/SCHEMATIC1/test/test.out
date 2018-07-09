@@ -1,0 +1,237 @@
+
+**** 07/09/18 09:50:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\57468\OneDrive\GitHub\Smoke Stopper\V10\simulation\smoke_stopper_v10-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000u 0 50n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SMOKE_STOPPER_V10
+R_R1         N00703 N00174  1k TC=0,0 
+R_R2         0 N00174  10k TC=0,0 
+R_R3         N00143 N00594  470 TC=0,0 
+R_R4         N00302 N00143  10 TC=0,0 
+Q_Q1         N00143 N00174 0 BC847B 
+D_D2         0 N00302 BZX84C5V1/PLP 
+X_M1         N00471 N00302 0 IRF540
+R_R5         N00471 VCC  5 TC=0,0 
+V_V1         N00594 0 5vdc
+V_V2         VCC 0 24Vdc
+V_V3         N00703 0 DC 0 AC 0
++PULSE 0 5 0 10n 10n 2.4998e-4 500u
+
+**** RESUMING test.cir ****
+.END
+
+**** 07/09/18 09:50:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\57468\OneDrive\GitHub\Smoke Stopper\V10\simulation\smoke_stopper_v10-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84C5V1/PLP   X_M1.MD         X_M1.MD1        X_M1.MD2        
+          IS    2.666500E-18  102.194000E-12    0             100.000000E-12 
+           N     .82284         1.21527        50                .4          
+         ISR  150.400000E-12                                                 
+         IKF     .01176                                                      
+          BV    5.176         100                                            
+         IBV     .10454       250.000000E-06                                 
+          RS     .51617         9.680220E-03                    3.000000E-06 
+          TT   43.858000E-09  100.000000E-09                                 
+         CJO  232.290000E-12    1.818590E-09    2.496970E-09                 
+          VJ     .79587         1.1279           .5                          
+           M     .35004          .449161         .9                          
+          FC                                   10.000000E-09                 
+          EG                    1.2                                          
+         XTI                    3.03885                                      
+
+
+               X_M1.MD3        
+          IS  100.000000E-12 
+           N     .4          
+
+
+**** 07/09/18 09:50:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\57468\OneDrive\GitHub\Smoke Stopper\V10\simulation\smoke_stopper_v10-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC847B          
+               NPN             
+       LEVEL    1            
+          IS    7.049000E-15 
+          BF  279.1          
+          NF    1            
+         VAF   62.37         
+         IKF     .2201       
+         ISE   59.160000E-15 
+          NE    1.81         
+          BR    3.816        
+          NR    1            
+         IKR    1.859        
+         ISC   16.170000E-15 
+          NC    2.394        
+          NK     .6305       
+         ISS    0            
+          RE    0            
+          RC    1.508        
+         CJE    9.485000E-12 
+         VJE     .5          
+         MJE     .3333       
+         CJC    7.287000E-12 
+         VJC     .5          
+         MJC     .3333       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  664.000000E-12 
+         XTF  147            
+         VTF   10            
+         ITF    4.664        
+          TR   10.000000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 07/09/18 09:50:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\57468\OneDrive\GitHub\Smoke Stopper\V10\simulation\smoke_stopper_v10-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.MM         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    3.56362      
+          KP   25.0081       
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.910310E-03 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO   16.058400E-06 
+        CGDO  425.919000E-09 
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 07/09/18 09:50:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\57468\OneDrive\GitHub\Smoke Stopper\V10\simulation\smoke_stopper_v10-pspicefiles\schematic1
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)   24.0000  (N00143)    4.9776 (N00174) 1.202E-09 (N00302)    4.9771     
+
+(N00471)     .3735 (N00594)    5.0000 (N00703)    0.0000 (X_M1.4)    0.0000     
+
+(X_M1.5)    -.2536 (X_M1.6)    -.2536 (X_M1.7)    4.9771 (X_M1.8)     .1498     
+
+(X_M1.9)     .3094 (X_M1.10)   -4.6677                   (X_M1.11)    -.2536    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.774E-05
+    V_V2        -4.725E+00
+    V_V3         1.202E-12
+    X_M1.VFI2   -2.536E-13
+    X_M1.VFI1    0.000E+00
+
+    TOTAL POWER DISSIPATION   1.13E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 07/09/18 09:50:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\57468\OneDrive\GitHub\Smoke Stopper\V10\simulation\smoke_stopper_v10-pspicefiles\schematic1
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.00
+
