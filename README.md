@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMcHauge%2FSmoke-Stopper.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FMcHauge%2FSmoke-Stopper?ref=badge_shield)
+
 ---- Smoke Stopper ----
 
 Designed to stop the magic smoke from escaping when testing drones.
@@ -50,3 +52,6 @@ version V1.0-V4.0 - doesn't work as intended, does nothing, burns, or wont turn 
 2017-OCT-9 - All files a now up on GitHub.
 
 2017-jan-xx - project began
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMcHauge%2FSmoke-Stopper.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMcHauge%2FSmoke-Stopper?ref=badge_large)
